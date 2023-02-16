@@ -1,0 +1,62 @@
+h1 {
+    position: relative;
+    text-align: center;
+    border: 2px solid #f1c40f;
+    width: 150px;
+    margin: auto;
+    padding: 10px; 
+    transition: 0.5s ease;
+  }
+  
+  h1:hover {
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #f1c40f;
+  }
+  
+  .carousel-container {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .prev, .next {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  
+  .next:hover, .prev:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .slides {
+    margin: 25px;
+    display: none;
+    position: absolute;
+    height: 25vh;
+    width: 90vw;
+    background-color: #3498db;
+    text-align: center;
+    border: 4px solid #16a085;
+    border-radius: 35px;
+    transition: 0.5s ease;
+  }
+  
+  .slides:hover {
+    border-radius: 0;
+    cursor: pointer;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .fadein {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+  }
+  
+  @keyframes fadeIn {
+    from {left: 0; width: 15vw}
+    to {left: 0; width: 90vw}
+  }
